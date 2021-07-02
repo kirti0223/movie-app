@@ -1,5 +1,6 @@
 import React from "react";
 import { addFavourites, removeFromFavourites } from "../actions";
+import { FaHeart, FaRegHeart } from 'react-icons/fa';
 
 class MovieCard extends React.Component{
     handleFavouritesClick = () => {
@@ -24,8 +25,8 @@ class MovieCard extends React.Component{
                         <div className="rating">{movie.imdbRating}</div>
                         {
                             isFavourite
-                            ? <button className="unfavourite-btn" onClick={this.handleUnFavouritesClick}>Unfavourite</button>
-                            : <button className="favourite-btn" onClick={this.handleFavouritesClick}>Favourite</button>
+                            ? <button className="unfavourite-btn" onClick={this.handleUnFavouritesClick}><FaHeart style={{'font-size': '25px'}}/></button>
+                            : <button className="favourite-btn" onClick={this.handleFavouritesClick}><FaRegHeart style={{'font-size': '25px'}}/></button>
                         }
                     </div>
                 </div>

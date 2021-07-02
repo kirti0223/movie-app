@@ -99,6 +99,7 @@ body {
 .main .tabs {
   display: flex;
   font-size: 20px;
+  margin-bottom: 10px;
 }
 .main .tabs .tab {
   background: #fff;
@@ -170,13 +171,11 @@ body {
   font-weight: 600;
 }
 .favourite-btn {
-  background-color: #2185d0;
-  color: #fff;
+  background-color: #fff;
 }
+
 .unfavourite-btn {
-  background-color: #db2828;
-  color: #fff;
-  text-shadow: none;
+  background-color: #fff;
 }
 .no-movies {
   padding: 20px 0;
